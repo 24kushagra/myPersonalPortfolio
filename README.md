@@ -9,7 +9,7 @@ I have made this website using HTML,CSS,JS and using some js libraries like
 
 # folderStructure
 
--There is index.html file, style.css, script.js files
+-There is index.html file, style.css, script.js , media.css files.
 and two folders assets and component.
 -Inside Component folder there are some more files like about.html,about.css , contact.html,contact.css,contact.js.
 and inside assets resources like font,images etc are available.
