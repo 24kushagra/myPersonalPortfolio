@@ -1,0 +1,272 @@
+
+@font-face {
+    font-family: montreal;
+    src: url(../assets/montreal.ttf);
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    background-color: #0A0A0A;
+    color: aliceblue;
+}
+
+.about-page{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+}
+
+.section1{
+    font-family: montreal;
+    height: 100vh;
+    width: 40vw;
+}
+
+.section2{
+    height: 100vh;
+    width: 20vw;
+    font-family: montreal;
+}
+
+.section3{
+    height: 100vh;
+    width: 40vw;
+}
+
+.section1 h1{
+    font-size: 6vw;
+    margin-top: 5vh;
+    margin-left: 2vw;
+    text-transform: uppercase;
+}
+
+.section1 p{
+    margin: 1.2vw;   
+    font-size: 1.1vw;
+    font-family: montreal;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.images1{
+    display: flex;
+}
+
+.img-box1{
+    height: 40vh;
+    width: 15vw;
+    margin-left: 2vw;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transform: scale(1.3);
+}
+
+.content1{
+    height: 40vh;
+    width: 16vw;
+    margin: 0vw 3vw;
+    margin-top: 2vw;
+    overflow: hidden;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content1 h3{
+    text-transform: uppercase;
+    font-size: 2vw;
+    text-align: center;
+}
+
+.content1 p{
+    text-align: center;
+}
+
+.download-btn{
+    padding: 6px 6px;
+    border-radius: 20px;
+    color: black;
+    background-color: aliceblue;
+    transition: all 0.2s ease-in-out;
+    font-size: 1.3;
+    text-transform: uppercase;
+}
+
+.download-btn:hover{
+    outline: 2px solid aliceblue;
+}
+
+.img-box2{
+    height: 90vh;
+    width: 35vw;
+    background-color:transparent;
+    margin: 1vw;
+    border-radius: 10px;
+    overflow: hidden;
+    filter: grayscale(2);
+}
+
+.img-box2:hover{
+    filter: grayscale(0);
+}
+
+.content2{
+    height: 40vh;
+    width: 15vw;
+    margin: 5vh 3vw;
+    overflow: hidden;
+    border-radius: 7px;
+}
+
+.content3{
+    height: 40vh;
+    width: 15vw;
+    margin-top: 2vw;
+    margin-left: 3vw;
+    overflow: hidden;
+    border-radius: 7px;
+}
+
+
+.content2 h3{
+    font-size: 2.5vw;
+    text-align: left;
+    margin: 4px;
+}
+
+button{
+    padding: 7px 10px;
+    border-radius: 14px;
+    border: 1px solid whitesmoke;
+    margin: 4px;
+    background-color: transparent;
+    color: aliceblue;
+}
+
+.content3 h3{
+    font-size: 2.5vw;
+    text-align: left;
+    margin: 4px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.img-box1 img{
+    display: none;
+}
+
+
+@media (max-width:431px) {
+
+    .img-box1 video{
+        display: none;
+    }
+
+    .img-box1 img{
+        display: block;
+        filter: grayscale(1);
+        object-fit: cover;
+    }
+
+    .img-box1 img:hover{
+        filter: grayscale(0);
+    }
+
+    .about-page{
+        height: 100vw;
+        flex-direction: column;
+    }
+
+    .content1,.content2,.content3{
+        width: 100vw;
+    }
+
+    .images1{
+        width: 100vw;
+        flex-direction: column;
+    }
+    
+    .about{
+        width: 100vw;
+    }
+
+    .about h1{
+        margin-top: 2vh;
+         font-size: 14vw;
+         text-align: center;
+    }
+
+    .about p{
+              margin-top: 2vh;
+              font-size: 3.5vw;
+              text-align: center;
+    }
+
+    .images1{
+        align-items: center;
+        justify-content: center;
+    }
+
+    .img-box1{
+        
+        margin-top: 1vh;
+        height: 40vh;
+        width: 90vw;
+    }
+
+    .content1{
+        width: 100vw;
+    }
+
+    .content1 h3{
+        font-size: 10vw;
+    }
+
+    .content1 p{
+        font-size: 4vw;
+    }
+
+    .download-btn{
+        margin-top: 1vh;
+        padding: 10px 10px;
+    }
+
+    .content2 h3{
+        font-size: 11vw;
+    }
+
+    .content3 h3{
+        font-size: 11vw;
+    }
+
+    .section3{
+        display: none;
+    }
+
+    .content2{
+        margin-bottom: 0vh;
+        height: 30vh;
+    }
+
+}
