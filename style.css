@@ -133,7 +133,7 @@ body{
     margin-left: 12vw;
     object-fit: cover;
     overflow: hidden;
-    border: 2px solid aliceblue;
+    border: 1px solid aliceblue;
     filter: grayscale(1);
     transition: all 0.3s ease ease-in-out;
     cursor: pointer;
@@ -152,7 +152,7 @@ body{
 
   #visit{
     border: 0;
-    padding: 9px 15px;
+    padding: 11px 40px;
     border-radius: 20px;
     margin-left: 12vw;
     margin-top: 2vh;
@@ -161,15 +161,24 @@ body{
   }
 
   #github{
-    border: 2px aliceblue solid;
+    border: 1px aliceblue solid;
     color: aliceblue;
     background-color: transparent;
-    padding: 9px 15px;
+    padding: 10px 20px;
     border-radius: 20px;
     margin-left: 1vw ;
     margin-top: 2vh;
     cursor: pointer;
     font-family: montreal;
+    transition: all ease 0.1s;
+  }
+
+  #github:hover{
+    border: 2px solid aliceblue;
+  }
+
+  #visit:hover{
+    background-color: rgb(212, 215, 217);
   }
 
   .swiper-button-prev{
@@ -293,7 +302,7 @@ nav i{
       font-family: montreal;
       font-size: 8vw;
       color:#dedede;
-      margin-left: 4vw;
+      margin-left: 3vw;
     }
     
   
