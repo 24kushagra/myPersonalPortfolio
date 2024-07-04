@@ -4,9 +4,9 @@
    
     body{
         height: 100%;
-        overflow-x: hidden;
         width: 100vw;
     }
+
 
     .full-nav{
         width: 100%;
@@ -213,6 +213,43 @@
 
     footer{
         margin-top: 15vh;
+    }
+
+}
+
+
+@media screen and (min-width: 431px) and (max-width: 770px) { 
+    .info{
+        flex-direction: column;
+    }
+
+    .msg{
+        display: none;
+    }
+
+    #intro h1{
+        font-size: 12vw;
+    }
+
+    nav i{
+        font-size: 4vw;
+    }
+
+    .full-nav{
+        width: 50%;
+    }
+
+    .quote-page{
+        font-size: 5vw;
+    }
+
+    .page3 h1{
+        font-size: 60vw;
+    }
+
+    .skill{
+        height: 30vh;
+        width: 12vw;
     }
 
 }
