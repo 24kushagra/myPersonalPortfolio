@@ -152,7 +152,7 @@ body{
 
   #visit{
     border: 0;
-    padding: 11px 40px;
+    padding: 10px 40px;
     border-radius: 20px;
     margin-left: 12vw;
     margin-top: 2vh;
@@ -174,7 +174,7 @@ body{
   }
 
   #github:hover{
-    border: 2px solid aliceblue;
+    border: 1px solid rgb(199, 201, 203);
   }
 
   #visit:hover{
@@ -376,6 +376,7 @@ nav i{
     align-items: center;
     justify-content: center;
     text-align: center;
+    overflow: hidden;
 }
 
 .card p{
@@ -476,17 +477,12 @@ nav i{
     display: none;
 }
 
-#gsap-svg{
-    filter: grayscale(1);
-}
-
 .card h3{
     font-size: 3vw;
     padding-bottom: 8px;
     
 }
 
-/* ------------------------------------------------- */
 
 /* --------------- SLIDING - TEXT ----------------- */
 
