@@ -205,14 +205,12 @@ body{
   }
 
 /* -----------------FOR-NAVBAR----------------- */
-/* 
-nav{
-    height: 5vh;
-} */
+
 
 nav i{
     margin-left: 3vw;
     font-size: 2vw;
+    padding-top: 6vh;
     padding-right: 80px;
     padding-bottom: 10px;
     cursor: pointer;
@@ -278,7 +276,7 @@ nav i{
     .info{
       font-family: montreal;
       display: flex;
-      margin-top: 8vh;
+      padding-top: 6vh;
       margin-left: 4vw;
       margin-bottom: 3vh;
       gap: 4vw;
@@ -315,7 +313,7 @@ nav i{
       transition: transform .3s;
     }
   
-    /* //115px */
+
     a{
       color: aliceblue;
     }
@@ -338,14 +336,14 @@ nav i{
     animation-timing-function: ease-in-out;
     }
  
-@keyframes floating {
+   @keyframes floating {
     0% { transform: translate(0,  0px); }
     50%  { transform: translate(0, 15px); }
     100%   { transform: translate(0,-0px);}
     }
 
 
-/*----------------------SERVICES - CSS -------------------------  */
+/*----------------------SKILLS - CSS -------------------------  */
 
 .page2 h1{
     color: aliceblue;
