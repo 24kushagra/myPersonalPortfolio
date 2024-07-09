@@ -16,21 +16,25 @@ main.addEventListener("mousemove",function(dets){
   })
 })
 
-
 // -----------------------------------------------
 
 
 page3.addEventListener("mouseenter",function(){
    gsap.to(crsr,{
-     scale:0
+     scale:0,
+     innerHTML:""
    })
 })
 
 page3.addEventListener("mouseleave",function(){
   gsap.to(crsr,{
-    scale:1
+    scale:1,
+    innerHTML:""
   })
 })
+
+
+
 
 
 //-------------- for navigation bar-------------------
@@ -90,7 +94,7 @@ gsap.to(".char",{
 
 
 
-// ------------------SERVICES H1--------------------------
+// ------------------skill H1--------------------------
 
 gsap.from(".page2 h1",{
   xPercent:6,
@@ -138,17 +142,25 @@ const swiper = new Swiper('.swiper', {
 });
 
 
-// ----------------------------------------
+// ------------------intro----------------------
 
 const myText = new SplitType('#intro h1')
 
 gsap.to(".char",{
-    y:0,
-    stagger: 0.05,
-    delay:0.2,
-    duration:0.1
+  y:0,
+  stagger: 0.05,
+  delay:0.2,
+  duration:0.1
 })
 
 
-// ------------------------------------------
+// ------------------info & nav i (#menu) ------------------------
 
+var tLine = gsap.timeline();
+
+tLine.from(".add,.schooling,.college,.con-details,.msg,#menu",{
+  y:50,
+  duration:0.67,
+  stagger:0.28,
+  opacity:0
+})
